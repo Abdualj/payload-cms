@@ -3,6 +3,10 @@ import React from 'react'
 import Link from 'next/link'
 import config from '@/payload.config'
 
+// Force dynamic rendering - do not pre-render at build time
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export default async function HomePage() {
   const payloadConfig = await config
   const payload = await getPayload({ config: payloadConfig })

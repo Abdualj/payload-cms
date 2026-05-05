@@ -74,7 +74,7 @@ DATABASE_URL=postgresql://postgres:SALASANASI@db.jborjxvtfnfidhkctoyp.supabase.c
 PAYLOAD_SECRET=generoi-tämä-alla
 ```
 
-```
+`
 NEXT_PUBLIC_SERVER_URL=https://SIVUSTOSI-NIMI.netlify.app
 ```
 

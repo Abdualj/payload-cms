@@ -4,19 +4,9 @@ import React from 'react'
 import Link from 'next/link'
 import config from '@/payload.config'
 
-export async function generateStaticParams() {
-  const payloadConfig = await config
-  const payload = await getPayload({ config: payloadConfig })
-  
-  const { docs: pages } = await payload.find({
-    collection: 'pages',
-    limit: 100,
-  })
-
-  return pages.map((page: any) => ({
-    slug: page.slug,
-  }))
-}
+// Force dynamic rendering - do not pre-render at build time
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
