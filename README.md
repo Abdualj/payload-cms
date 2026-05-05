@@ -26,11 +26,13 @@ Projektin tavoitteena on luoda modernin kirjoituskonekaupan verkkosivusto käytt
 ## 🚀 Deployment - Käyttöönotto tuotannossa
 
 ### Pika-asennus (5 minuuttia)
-👉 **[QUICK-DEPLOY.md](./QUICK-DEPLOY.md)** - Nopein tapa deployata Verceliin + Supabase (ilmainen)
+👉 **[QUICK-DEPLOY.md](./QUICK-DEPLOY.md)** - Vercel + Supabase (ilmainen, SUOSITELTU)  
+👉 **[NETLIFY-DEPLOY.md](./NETLIFY-DEPLOY.md)** - Netlify + Supabase (vaihtoehto)
 
 ### Täydellinen deployment-ohje
 👉 **[DEPLOYMENT.md](./DEPLOYMENT.md)** - Kattavat ohjeet eri alustoille:
-- ☁️ Vercel (Suositeltu Next.js:lle)
+- ☁️ Vercel (Suositeltu Next.js:lle) ⭐
+- 🌐 Netlify (Hyvä vaihtoehto)
 - 🚂 Railway
 - 🐳 Docker
 - 🖥️ VPS (DigitalOcean, Linode, Hetzner)
