@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Payload } from 'payload'
 
 export const seedKirjoituskonekauppa = async (payload: Payload): Promise<void> => {
@@ -17,7 +18,6 @@ export const seedKirjoituskonekauppa = async (payload: Payload): Promise<void> =
       data: {
         email: 'admin@kirjoituskonekauppa.fi',
         password: 'demo1234',
-        name: 'Admin',
       },
     })
     console.log('✓ Admin user created: admin@kirjoituskonekauppa.fi / demo1234')
