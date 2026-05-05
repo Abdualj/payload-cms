@@ -1,0 +1,23 @@
+{
+  "buildCommand": "pnpm run build",
+  "framework": "nextjs",
+  "installCommand": "pnpm install",
+  "env": {
+    "DATABASE_URL": "@database_url",
+    "PAYLOAD_SECRET": "@payload_secret",
+    "NEXT_PUBLIC_SERVER_URL": "@next_public_server_url"
+  },
+  "build": {
+    "env": {
+      "DATABASE_URL": "@database_url",
+      "PAYLOAD_SECRET": "@payload_secret",
+      "NEXT_PUBLIC_SERVER_URL": "@next_public_server_url"
+    }
+  },
+  "regions": ["fra1"],
+  "functions": {
+    "src/app/api/**/*": {
+      "maxDuration": 30
+    }
+  }
+}
